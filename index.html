@@ -29,60 +29,210 @@
       </div>
     </header>
     <!-- main container -->
-    <main class="w-11/12 container mx-auto">
+    <main
+      class="w-11/12 container mx-auto mt-12 flex gap-6 flex-col md:flex-row"
+    >
       <!-- geometry calculator -->
-      <section>
+      <section
+        class="flex-1 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
         <!-- card-1 -->
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
+        <div class="card border border-[#1111111A] rounded-lg pt-12">
+          <figure class="px-8">
+            <img src="./assets/images/triangle.png" alt="triangle" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+          <div class="card-body text-center">
+            <h2 class="text-[1.563rem] text-[#414141] font-bold">Triangle</h2>
+            <p>Area (A) = 0.5 X b X h</p>
+            <div
+              class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
+            >
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="b"
+              />
+              <label>cm</label>
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="h"
+              />
+              <label>cm</label>
+            </div>
+            <div class="card-actions mt-9">
+              <button class="btn w-full bg-light-blue btn-info text-white">
+                Calculate
+              </button>
             </div>
           </div>
         </div>
         <!-- card-2 -->
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
+        <div class="card border border-[#1111111A] rounded-lg pt-12">
+          <figure class="px-8">
+            <img src="./assets/images/rectangle.png" alt="triangle" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+          <div class="card-body text-center">
+            <h2 class="text-[1.563rem] text-[#414141] font-bold">Rectangle</h2>
+            <p>Area (A) = w X l</p>
+            <div
+              class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
+            >
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="w"
+              />
+              <label>cm</label>
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="l"
+              />
+              <label>cm</label>
+            </div>
+            <div class="card-actions mt-9">
+              <button class="btn w-full bg-light-blue btn-info text-white">
+                Calculate
+              </button>
             </div>
           </div>
         </div>
         <!-- card-3 -->
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <figure>
-            <img
-              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-              alt="Shoes"
-            />
+        <div class="card border border-[#1111111A] rounded-lg pt-12">
+          <figure class="px-8">
+            <img src="./assets/images/parallelogram.png" alt="triangle" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
+          <div class="card-body text-center">
+            <h2 class="text-[1.563rem] text-[#414141] font-bold">
+              Parallelogram
+            </h2>
+            <p>Area (A) = b X h</p>
+            <div
+              class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
+            >
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="b"
+              />
+              <label>cm</label>
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="h"
+              />
+              <label>cm</label>
+            </div>
+            <div class="card-actions mt-9">
+              <button class="btn w-full bg-light-blue btn-info text-white">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card border border-[#1111111A] rounded-lg pt-12">
+          <figure class="px-8">
+            <img src="./assets/images/rhombus.png" alt="triangle" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="text-[1.563rem] text-[#414141] font-bold">Rhombus</h2>
+            <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+            <div
+              class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
+            >
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="d1"
+              />
+              <label>cm</label>
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="d2"
+              />
+              <label>cm</label>
+            </div>
+            <div class="card-actions mt-9">
+              <button class="btn w-full bg-light-blue btn-info text-white">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card-5 -->
+        <div class="card border border-[#1111111A] rounded-lg pt-12">
+          <figure class="px-8">
+            <img src="./assets/images/pentagon.png" alt="triangle" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="text-[1.563rem] text-[#414141] font-bold">Pentagon</h2>
+            <p>Area (A) = 0.5 X p X b</p>
+            <div
+              class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
+            >
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="p"
+              />
+              <label>cm</label>
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="b"
+              />
+              <label>cm</label>
+            </div>
+            <div class="card-actions mt-9">
+              <button class="btn w-full bg-light-blue btn-info text-white">
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card-6 -->
+        <div class="card border border-[#1111111A] rounded-lg pt-12">
+          <figure class="px-8">
+            <img src="./assets/images/ellipse.png" alt="triangle" />
+          </figure>
+          <div class="card-body text-center">
+            <h2 class="text-[1.563rem] text-[#414141] font-bold">Ellipse</h2>
+            <p>Area (A) = &pi;ab</p>
+            <div
+              class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
+            >
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="a"
+              />
+              <label>cm</label>
+              <input
+                class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
+                type="number"
+                placeholder="b"
+              />
+              <label>cm</label>
+            </div>
+            <div class="card-actions mt-9">
+              <button class="btn w-full bg-light-blue btn-info text-white">
+                Calculate
+              </button>
             </div>
           </div>
         </div>
       </section>
       <!-- area calculation -->
-      <section></section>
+      <section
+        class="md:w-[28%] h-fit min-h-96 p-8 border border-[#1111111A] rounded-lg"
+      >
+        <h3 class="text-[#111111CC] text-xl font-bold underline text-center">
+          Area Calculation
+        </h3>
+      </section>
     </main>
     <script src="./assets/scripts/script.js"></script>
   </body>
