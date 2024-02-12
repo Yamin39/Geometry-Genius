@@ -48,25 +48,31 @@
               class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
             >
               <input
+                id="triangle-base"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="b"
               />
               <label>cm</label>
               <input
+                id="triangle-height"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="h"
               />
               <label>cm</label>
             </div>
-            <div class="card-actions mt-9">
+            <p>
+              A = <strong><span id="triangle-display">0</span></strong> cm<sup>2</sup>
+            </p>
+            <div class="card-actions mt-9" onclick="calculateTriangleArea()">
               <button class="btn w-full bg-light-blue btn-info text-white">
                 Calculate
               </button>
             </div>
           </div>
         </div>
+
         <!-- card-2 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
@@ -98,6 +104,7 @@
             </div>
           </div>
         </div>
+
         <!-- card-3 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
@@ -131,6 +138,7 @@
             </div>
           </div>
         </div>
+
         <!-- card-4 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
@@ -162,6 +170,7 @@
             </div>
           </div>
         </div>
+
         <!-- card-5 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
@@ -193,6 +202,7 @@
             </div>
           </div>
         </div>
+
         <!-- card-6 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
@@ -225,6 +235,7 @@
           </div>
         </div>
       </section>
+
       <!-- area calculation -->
       <section
         class="md:w-[28%] h-fit min-h-96 p-8 border border-[#1111111A] rounded-lg"
@@ -234,6 +245,9 @@
         </h3>
       </section>
     </main>
+
+    <!-- scripts -->
+    <script src="./assets/scripts/triangle.js"></script>
     <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
