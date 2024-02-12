@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,74 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header></header>
-    <!-- main contaienr -->
-    <main>
+    <header
+      class="w-11/12 container mx-auto flex justify-between items-center px-10 py-4 mt-8 bg-[#1090D81A] rounded-lg"
+    >
+      <div>
+        <h1 class="font-bold text-[2.5rem] text-[#111111CC]">Interactive</h1>
+        <p class="font-medium text-[1.5rem] text-[#11111199]">
+          Geometry Genius
+        </p>
+      </div>
+      <div>
+        <button class="btn bg-light-blue text-white hover:bg-blue-400">
+          Blog
+        </button>
+      </div>
+    </header>
+    <!-- main container -->
+    <main class="w-11/12 container mx-auto">
       <!-- geometry calculator -->
-      <section></section>
+      <section>
+        <!-- card-1 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure>
+            <img
+              src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+              alt="Shoes"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Shoes!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- area calculation -->
       <section></section>
     </main>
