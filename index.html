@@ -39,7 +39,11 @@
         <!-- card-1 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
-            <img src="./assets/images/triangle.png" alt="triangle" />
+            <img
+              src="./assets/images/triangle.png"
+              class="max-h-36"
+              alt="triangle"
+            />
           </figure>
           <div class="card-body text-center">
             <h2 class="text-[1.563rem] text-[#414141] font-bold">Triangle</h2>
@@ -62,11 +66,18 @@
               />
               <label>cm</label>
             </div>
-            <p>
-              A = <strong><span id="triangle-display">0</span></strong> cm<sup>2</sup>
+            <p class="mt-3">
+              Area:
+              <strong
+                ><span id="triangle-display" class="text-2xl">0</span></strong
+              >
+              cm<sup>2</sup>
             </p>
-            <div class="card-actions mt-9" onclick="calculateTriangleArea()">
-              <button class="btn w-full bg-light-blue btn-info text-white">
+            <div class="card-actions mt-6">
+              <button
+                class="btn w-full bg-light-blue btn-info text-white"
+                onclick="calculateTriangleArea()"
+              >
                 Calculate
               </button>
             </div>
@@ -85,20 +96,32 @@
               class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
             >
               <input
+                id="rectangle-width"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="w"
               />
               <label>cm</label>
               <input
+                id="rectangle-length"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="l"
               />
               <label>cm</label>
             </div>
+            <p class="mt-3">
+              Area:
+              <strong
+                ><span id="rectangle-display" class="text-2xl">0</span></strong
+              >
+              cm<sup>2</sup>
+            </p>
             <div class="card-actions mt-9">
-              <button class="btn w-full bg-light-blue btn-info text-white">
+              <button
+                onclick="calculateRectangleArea()"
+                class="btn w-full bg-light-blue btn-info text-white"
+              >
                 Calculate
               </button>
             </div>
@@ -119,20 +142,34 @@
               class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
             >
               <input
+                id="parallelogram-base"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="b"
               />
               <label>cm</label>
               <input
+                id="parallelogram-height"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="h"
               />
               <label>cm</label>
             </div>
+            <p class="mt-3">
+              Area:
+              <strong
+                ><span id="parallelogram-display" class="text-2xl"
+                  >0</span
+                ></strong
+              >
+              cm<sup>2</sup>
+            </p>
             <div class="card-actions mt-9">
-              <button class="btn w-full bg-light-blue btn-info text-white">
+              <button
+                onclick="calculateParallelogramArea()"
+                class="btn w-full bg-light-blue btn-info text-white"
+              >
                 Calculate
               </button>
             </div>
@@ -142,7 +179,7 @@
         <!-- card-4 -->
         <div class="card border border-[#1111111A] rounded-lg pt-12">
           <figure class="px-8">
-            <img src="./assets/images/rhombus.png" alt="triangle" />
+            <img src="./assets/images/rhombus.png" alt="Rhombus" />
           </figure>
           <div class="card-body text-center">
             <h2 class="text-[1.563rem] text-[#414141] font-bold">Rhombus</h2>
@@ -151,20 +188,32 @@
               class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
             >
               <input
+                id="rhombus-d1"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="d1"
               />
               <label>cm</label>
               <input
+                id="rhombus-d2"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="d2"
               />
               <label>cm</label>
             </div>
+            <p class="mt-3">
+              Area:
+              <strong
+                ><span id="rhombus-display" class="text-2xl">0</span></strong
+              >
+              cm<sup>2</sup>
+            </p>
             <div class="card-actions mt-9">
-              <button class="btn w-full bg-light-blue btn-info text-white">
+              <button
+                onclick="calculateRhombusArea()"
+                class="btn w-full bg-light-blue btn-info text-white"
+              >
                 Calculate
               </button>
             </div>
@@ -178,25 +227,37 @@
           </figure>
           <div class="card-body text-center">
             <h2 class="text-[1.563rem] text-[#414141] font-bold">Pentagon</h2>
-            <p>Area (A) = 0.5 X p X b</p>
+            <p>Area (A) = 0.5 X p X a</p>
             <div
               class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
             >
               <input
+                id="pentagon-p"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="p"
               />
               <label>cm</label>
               <input
+                id="pentagon-a"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
-                placeholder="b"
+                placeholder="a"
               />
               <label>cm</label>
             </div>
+            <p class="mt-3">
+              Area:
+              <strong
+                ><span id="pentagon-display" class="text-2xl">0</span></strong
+              >
+              cm<sup>2</sup>
+            </p>
             <div class="card-actions mt-9">
-              <button class="btn w-full bg-light-blue btn-info text-white">
+              <button
+                onclick="calculatePentagonArea()"
+                class="btn w-full bg-light-blue btn-info text-white"
+              >
                 Calculate
               </button>
             </div>
@@ -215,20 +276,32 @@
               class="flex md:flex-col lg:flex-row justify-center items-center gap-1 px-8"
             >
               <input
+                id="ellipse-a"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="a"
               />
               <label>cm</label>
               <input
+                id="ellipse-b"
                 class="max-w-[4.5rem] pl-3 py-1 bg-[#F1F1F1] rounded-md outline-none"
                 type="number"
                 placeholder="b"
               />
               <label>cm</label>
             </div>
+            <p class="mt-3">
+              Area:
+              <strong
+                ><span id="ellipse-display" class="text-2xl">0</span></strong
+              >
+              cm<sup>2</sup>
+            </p>
             <div class="card-actions mt-9">
-              <button class="btn w-full bg-light-blue btn-info text-white">
+              <button
+                onclick="calculateEllipseArea()"
+                class="btn w-full bg-light-blue btn-info text-white"
+              >
                 Calculate
               </button>
             </div>
@@ -247,7 +320,6 @@
     </main>
 
     <!-- scripts -->
-    <script src="./assets/scripts/triangle.js"></script>
     <script src="./assets/scripts/script.js"></script>
   </body>
 </html>
