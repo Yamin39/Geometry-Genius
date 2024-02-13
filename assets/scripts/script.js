@@ -125,3 +125,10 @@ document.getElementById("ellipse-b").addEventListener("keyup", (event) => {
 document.getElementById("remove-btn").addEventListener("click", () => {
   document.getElementById("area-calc-container").innerHTML = "";
 });
+
+//modal
+
+function hideModal() {
+  document.getElementById("modal").style.display = "none";
+  document.querySelector("#modal div").style.display = "none";
+}

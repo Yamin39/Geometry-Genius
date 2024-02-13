@@ -9,6 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <section id="modal" class="flex justify-center items-center absolute w-full z-10 h-[100vh] md:hidden">
+      <div class="flex gap-5 justify-center items-center flex-col fixed w-[80%] bg-white rounded-xl p-8 text-center">
+        <h1 class="text-2xl font-bold">You can find the calculation history at the bottom of this page. There, you can also convert cm² to m²</h1>
+        <button class="btn btn-success text-white" onclick="hideModal()">Okay</button>
+      </div>
+    </section>
     <header class="w-11/12 container mx-auto flex justify-between items-center px-10 py-4 mt-8 bg-[#1090D81A] rounded-lg">
       <div>
         <h1 class="font-bold text-[2.5rem] text-[#111111CC]">Interactive</h1>
@@ -19,7 +25,7 @@
       </div>
     </header>
     <!-- main container -->
-    <main class="w-11/12 container mx-auto mt-12 flex gap-6 flex-col md:flex-row">
+    <main class="w-11/12 container mx-auto my-12 flex gap-6 flex-col md:flex-row">
       <!-- geometry calculator -->
       <section class="flex-1 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <!-- card-1 -->
@@ -190,6 +196,7 @@
         <ol id="area-calc-container" class="w[80%] mx-auto list-decimal"></ol>
       </section>
     </main>
+
     <!-- scripts -->
     <script src="./assets/scripts/script.js"></script>
   </body>
